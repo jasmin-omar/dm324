@@ -1,6 +1,7 @@
 <html>
     <head>
 <title>newstudent</title>
+<link rel="stylesheet" href="style.css">
     </head>
     <body>
 <!--navi-->
@@ -10,7 +11,11 @@
 <!--#navi-->
 <hr>
 <!--sec-->
+
 <form action="#" methode="get">
+    <fieldset>
+        <legend>Personal informations:</legend>
+
     <p>
         <label>FullName:
             <input type="text" name="txtname">
@@ -18,7 +23,7 @@
     </p>
     <p>
         <label>Birthday:
-            <input type="data" name="txtBD">
+            <input type="date" name="txtBD">
 
         </label>
     </p>
@@ -29,34 +34,69 @@
 
         </label>
     </p>
+</fieldset>
+
+<fieldset>
+    <legend>Contact informations:</legend>
+    <p>
+        <label>Email:
+            <textarea rows="10" cols="90" name="txtemail"></textarea>
+
+        </label>
+    </p>
+
     <p>
         <label>Adress:
-            <textarea row="10" col="30" name="txtarea"></textarea>
+            <textarea rows="10" cols="90" name="txtarea"></textarea>
 
         </label>
     </p>
     <p>
+            <label>Phone:
+                <textarea rows="3" cols="70" name="txtnumber"></textarea>
+    
+            </label>
+    </p>
+</fieldset>
+
+
+    <fieldset>
+        <legend>Faculty informations:</legend>
+    <p>
         
         <label>Choose your faculty:
             <select name="faculty">
-                <option value="FCIT">
+                <option value="F1">
                     Faculty of computer
                 </option>
-                <option value="FCIT">
+                <option value="F2">
                     Faculty of Engenering
                 </option>
-                <option value="FCIT">
+                <option value="F3">
                     Faculty of Pharmacy
+                </option>
+                <option value="F4">
+                    Faculty of Dentistry
+                </option>
+                <option value="F5">
+                    Faculty of Political science
+                </option>
+                <option value="F6">
+                    Faculty of Business
                 </option>
             </select>
 </label>
         
     </p>
-    <p>
-        <label>
-            <input type="submit">
-        </label>
-    </p>
+
+    </fieldset>
+
+<p>
+    <label>
+        <input type="submit">
+    </label>
+</p>
+
 </form>
 
     </body>
@@ -65,4 +105,5 @@
         copyright &copy; <a href="https://www.fue.edu.eg/" target="_blank">Future university in Egypt</a>&nbsp;&mdash;&nbsp;
         <a href="mailto:20190194@fue.edu.eg" target="_blank">contact us</a>&nbsp;&mdash;&nbsp;
     </footer>
+   
 </html>
