@@ -72,3 +72,8 @@ thead tr{
 tbody tr:nth-child(odd){
     background-color: lightgray;
 }
+h1{
+    text-align: center;
+    color: rgba(14, 136, 30, 0.623);
+    
+}
